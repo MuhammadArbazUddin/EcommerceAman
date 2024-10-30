@@ -24,10 +24,7 @@ const Header = () => {
           </form>
 
           <div className="hidden lg:flex items-center space-x-4">
-            <a
-              href="wishlist.html"
-              className="flex items-center space-x-2 transition-transform transform hover:scale-110"
-            >
+            <a href="wishlist.html" className="flex items-center space-x-2">
               <span className="text-2xl  text-gray-700 relative">
                 <FaRegHeart size={22} />
                 <span className="absolute top-[-5px] right-[-7px] w-4 h-4 flex items-center justify-center rounded-full bg-customGreen text-white text-xs">
@@ -38,10 +35,7 @@ const Header = () => {
                 Wishlist
               </span>
             </a>
-            <a
-              href="cart.html"
-              className="flex items-center space-x-2 transition-transform transform hover:scale-110"
-            >
+            <a href="/" className="flex items-center space-x-2 ">
               <span className="text-2xl text-gray-700 relative">
                 <IoCartOutline />
                 <span className="absolute top-[-5px] right-[-7px] w-4 h-4 flex items-center justify-center rounded-full bg-customGreen text-white text-xs">

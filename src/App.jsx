@@ -1,5 +1,11 @@
 import React from "react";
-import { Footer, Header, HeaderTop, Navbar } from "./components/components";
+import {
+  Footer,
+  Header,
+  HeaderTop,
+  Hero,
+  Navbar,
+} from "./components/components";
 
 const App = () => {
   return (
@@ -7,6 +13,7 @@ const App = () => {
       <HeaderTop />
       <Header />
       <Navbar />
+      <Hero />
       <Footer />
     </>
   );

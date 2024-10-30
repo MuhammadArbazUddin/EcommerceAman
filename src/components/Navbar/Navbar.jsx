@@ -6,9 +6,9 @@ import { FaChevronDown } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <div className="w-[100%] flex items-center justify-between px-5 border border-gray-300 ">
+      <div className="sticky top-0 w-full flex items-center justify-between px-5 border border-gray-300 bg-white z-50 ">
         <div className="flex items-center justify-center">
-          <div className="flex items-center justify-center pl-1 pr-5 border-r-2 ">
+          <div className="flex items-center justify-center pl-1 pr-5 border-r-2">
             <CgMenuGridO className="text-2xl mr-2" />
             <select className="border-none outline-none text-md font-normal hide-default-select-icon pr-2">
               <option>All Categories</option>
@@ -16,22 +16,22 @@ const Navbar = () => {
             <FaChevronDown />
           </div>
           <ul className="flex gap-5 text-md text-gray-400 px-10">
-            <li className="flex items-center  font-medium text-green-600">
+            <li className="flex items-center font-medium text-green-600">
               Home <FaChevronDown className="text-sm ml-2" />
             </li>
-            <li className="flex items-center  font-medium">
+            <li className="flex items-center font-medium">
               Shop <FaChevronDown className="text-sm ml-2" />
             </li>
-            <li className="flex items-center  font-medium">
+            <li className="flex items-center font-medium">
               Pages <FaChevronDown className="text-sm ml-2" />
             </li>
-            <li className="flex items-center  font-medium">
+            <li className="flex items-center font-medium">
               Vendors <FaChevronDown className="text-sm ml-2" />
             </li>
-            <li className="flex items-center  font-medium">
+            <li className="flex items-center font-medium">
               Blog <FaChevronDown className="text-sm ml-2" />
             </li>
-            <li className="flex items-center  font-medium">
+            <li className="flex items-center font-medium">
               Contact Us <FaChevronDown className="text-sm ml-2" />
             </li>
           </ul>
