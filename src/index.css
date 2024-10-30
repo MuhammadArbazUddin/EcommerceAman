@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
+}
+
+.border-small {
+  position: relative;
+}
+
+.border-small::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  height: 60%;
+  border-right: 1px solid rgba(245, 245, 245, 0.479);
+}
+
+.hide-default-select-icon {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+}
+.footer-background {
+  background-image: url("https://wowtheme7.com/tf/marketpro/assets/images/bg/body-bottom-bg.png");
+  background-size: cover; /* Adjusts the image size to cover the footer */
+  background-position: center; /* Centers the image */
+}
+
+.footer-content {
+  background: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Optional: add a background to make text readable */
+  padding: 20px; /* Adjust padding as needed */
+}
