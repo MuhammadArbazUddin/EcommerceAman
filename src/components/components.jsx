@@ -6,3 +6,8 @@ export { default as Navbar } from "./Navbar/Navbar";
 export { default as Footer } from "./Footer/Footer";
 export { default as Hero } from "./Hero/Hero";
 export { default as ScrollDownButton } from "./ScrollDownButton/ScrollDownButton";
+export { default as CardsSlider } from "./CardsSlider/CardsSlider";
+export { default as VendorsCard } from "./VendorsCard/VendorsCard";
+export { default as OffersSection } from "./OffersSection/OffersSection";
+export { default as ProductCard } from "./ProductCards/ProductCards";
+export { default as ProductGrid } from "./ProductGrid/ProductGrid";
