@@ -24,6 +24,19 @@
   border-right: 1px solid rgba(245, 245, 245, 0.479);
 }
 
+.border-big {
+  position: relative;
+}
+
+.border-big::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -70%;
+  height: 240%;
+  border-right: 1px solid rgba(3, 3, 3, 0.479);
+}
+
 .hide-default-select-icon {
   appearance: none;
   -webkit-appearance: none;

@@ -1,14 +1,15 @@
 import React from "react";
 import {
   CardsSlider,
+  FeaturesSection,
   Footer,
   Header,
   HeaderTop,
   Hero,
   Navbar,
   OffersSection,
-  ProductCard,
   ProductGrid,
+  ShopByBrands,
   VendorsCard,
 } from "./components/components";
 
@@ -23,6 +24,8 @@ const App = () => {
       <VendorsCard />
       <OffersSection />
       <ProductGrid />
+      <ShopByBrands />
+      <FeaturesSection />
       <Footer />
     </>
   );

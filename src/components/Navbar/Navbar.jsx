@@ -6,9 +6,9 @@ import { FaChevronDown } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <div className="sticky top-0 w-full flex items-center justify-between px-5 border border-gray-300 bg-white z-50 ">
+      <div className="sticky top-0 w-full flex items-center justify-between px-5 border bg-white z-50 ">
         <div className="flex items-center justify-center">
-          <div className="flex items-center justify-center pl-1 pr-5 border-r-2">
+          <div className="flex items-center justify-center pr-5 pl-5 p-4 border-x">
             <CgMenuGridO className="text-2xl mr-2" />
             <select className="border-none outline-none text-md font-normal hide-default-select-icon pr-2">
               <option>All Categories</option>

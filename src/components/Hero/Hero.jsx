@@ -14,7 +14,7 @@ const slides = [
     id: 2,
     title: "Fresh Produce Delivered to Your Doorstep",
     image:
-      "https://wowtheme7.com/tf/marketpro/assets/images/thumbs/banner-img3.png", // Change this to a different image if needed
+      "https://wowtheme7.com/tf/marketpro/assets/images/thumbs/banner-img1.png", // Change this to a different image if needed
   },
   // Add more slides as needed
 ];
@@ -37,24 +37,24 @@ const Hero = () => {
         alt="hero"
         className="absolute inset-0 object-cover w-full h-full z-0"
       />
-      <div className="flex  items-center justify-between px-5 py-10 relative z-10">
-        <div className="w-1/1">
+      <div className="flex items-center justify-between px-5 py-10 relative z-10">
+        <div className="w-8/12">
+          {" "}
+          {/* Adjusted width to 60% */}
           <h1 className="text-6xl leading-tight font-bold text-customBlue font-quick">
             {slides[currentSlide].title}
           </h1>
           <div className="mt-5">
-            <button className="flex items-center mt-12 px-6 py-2 bg-[#4B9E60] text-white rounded-full">
+            <button className="flex items-center mt-12 px-6 py-2 bg-[#4B9E60] text-white rounded-full hover:bg-green-700 transition-all duration-300 ease-in-out">
               Explore Shop
               <IoCartOutline size={22} className="ml-2" />
             </button>
           </div>
         </div>
-        <div className="w-1/2 flex justify-end">
-          <img
-            src={slides[currentSlide].image}
-            alt="Grocery"
-            className="w-[400px] h-auto"
-          />
+        <div className=" flex justify-end">
+          {" "}
+          {/* Adjusted width to 40% */}
+          <img src={slides[currentSlide].image} alt="Grocery" width={400} />
         </div>
       </div>
 
