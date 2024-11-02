@@ -1,8 +1,11 @@
 import React from "react";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa6";
-
+import { useDispatch } from "react-redux";
+import { openModal } from "../../store/slices/modalSlice";
 const HeaderTop = () => {
+  const dispatch = useDispatch();
+
   return (
     <div className="flex justify-between bg-customGreen p-[0.4rem] px-3">
       <div className="flex justify-between flex-wrap gap-8 w-full">
@@ -42,34 +45,34 @@ const HeaderTop = () => {
         </ul>
 
         <ul className="flex items-center flex-wrap">
-          <li className=" border-small  relative">
+          <li className="border-small relative">
             <a href="#" className="text-white flex items-center text-sm px-3">
               Help Center
               <FaChevronDown size={10} className="ml-1" />
             </a>
           </li>
 
-          <li className=" border-small relative">
-            <a href="#" className=" text-white flex items-center text-sm px-3">
+          <li className="border-small relative">
+            <a href="#" className="text-white flex items-center text-sm px-3">
               Eng
               <FaChevronDown size={10} className="ml-1" />
             </a>
           </li>
 
-          <li className=" border-small relative">
-            <a href="#" className=" text-white flex items-center text-sm px-3">
+          <li className="border-small relative">
+            <a href="#" className="text-white flex items-center text-sm px-3">
               USD
               <FaChevronDown size={10} className="ml-1" />
             </a>
           </li>
-          <li className="  relative">
-            <a
-              href="#"
-              className=" flex  items-center gap-1 text-white text-sm px-3"
+          <li className="relative">
+            <button
+              onClick={() => dispatch(openModal())}
+              className="flex items-center gap-1 text-white text-sm px-3"
             >
               <FaRegCircleUser />
               My Account
-            </a>
+            </button>
           </li>
         </ul>
       </div>

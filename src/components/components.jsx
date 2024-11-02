@@ -13,3 +13,5 @@ export { default as ProductCard } from "./ProductCards/ProductCards";
 export { default as ProductGrid } from "./ProductGrid/ProductGrid";
 export { default as ShopByBrands } from "./ShopByBrands/ShopByBrands";
 export { default as FeaturesSection } from "./FeaturesSection/FeaturesSection";
+export { default as LoginForm } from "./LoginForm/LoginForm";
+export { default as CreateAccount } from "./CreateAccount/CreateAccount";

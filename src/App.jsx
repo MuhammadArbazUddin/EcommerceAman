@@ -1,33 +1,20 @@
 import React from "react";
-import {
-  CardsSlider,
-  FeaturesSection,
-  Footer,
-  Header,
-  HeaderTop,
-  Hero,
-  Navbar,
-  OffersSection,
-  ProductGrid,
-  ShopByBrands,
-  VendorsCard,
-} from "./components/components";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home, Vendors } from "./pages/page";
+import { Footer, Header, HeaderTop, Navbar } from "./components/components";
 
 const App = () => {
   return (
-    <>
+    <Router>
       <HeaderTop />
       <Header />
       <Navbar />
-      <Hero />
-      <CardsSlider />
-      <VendorsCard />
-      <OffersSection />
-      <ProductGrid />
-      <ShopByBrands />
-      <FeaturesSection />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/vendors" element={<Vendors />} />
+      </Routes>
       <Footer />
-    </>
+    </Router>
   );
 };
 

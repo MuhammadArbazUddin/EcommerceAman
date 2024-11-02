@@ -58,7 +58,7 @@ const ProductCard = () => {
           </div>
           <a
             href="/"
-            className="bg-[#E8F9E9] text-customGreen hover:bg-customGreen hover:text-white py-3 px-6 rounded-full flex items-center gap-2 w-full justify-center transition duration-200 font-quick" // Apply font-quick
+            className="bg-[#E8F9E9] font-semibold text-customGreen hover:bg-customGreen hover:text-white py-3 px-6 rounded-full flex items-center gap-2 w-full justify-center transition duration-200 font-quick" // Apply font-quick
           >
             Add To Cart <FiShoppingCart />
           </a>

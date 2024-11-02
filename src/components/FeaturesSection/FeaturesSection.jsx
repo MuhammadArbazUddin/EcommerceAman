@@ -56,7 +56,7 @@ const FeatureCard = ({ title, description, icon }) => {
 
 const NewsletterBanner = () => {
   return (
-    <div className="relative py-4 my-10 px-11 bg-[#121535] rounded-2xl overflow-hidden p-4 flex gap-4 z-10">
+    <div className="relative py-4 my-2 px-11 bg-[#121535] rounded-2xl overflow-hidden p-4 flex gap-4 z-10">
       <img
         src="https://wowtheme7.com/tf/marketpro/assets/images/shape/offer-shape.png"
         alt=""
