@@ -1,14 +1,9 @@
 import React, { useState } from "react";
-import {
-  FaPhoneVolume,
-  FaAppleAlt,
-  FaCarrot,
-  FaFish,
-  FaChevronUp,
-} from "react-icons/fa";
+import { FaPhoneVolume, FaAppleAlt, FaCarrot } from "react-icons/fa";
 import { CgMenuGridO } from "react-icons/cg";
 import { FaChevronDown } from "react-icons/fa";
 import { Link, useLocation } from "react-router-dom";
+import { FaShirt } from "react-icons/fa6";
 
 const Navbar = () => {
   const location = useLocation();
@@ -19,13 +14,13 @@ const Navbar = () => {
     { path: "/shop", label: "Shop" },
     { path: "/pages", label: "Pages" },
     { path: "/vendors", label: "Vendors" },
-    { path: "/contactus", label: "Contact Us" },
+    { path: "/contact-us", label: "Contact Us" },
   ];
 
   const categories = [
     { label: "Groceries", icon: <FaCarrot className="mr-2" /> },
     { label: "Fruits", icon: <FaAppleAlt className="mr-2" /> },
-    { label: "Seafood", icon: <FaFish className="mr-2" /> },
+    { label: "Clothes", icon: <FaShirt className="mr-2" /> },
   ];
 
   return (
@@ -41,8 +36,14 @@ const Navbar = () => {
             <ul className="border-none outline-none text-md  font-normal hide-default-ul-icon pr-2">
               <li>All Categories</li>
             </ul>
-            {isHovered ? <FaChevronUp /> : <FaChevronDown />}
-
+            {/* {isHovered ? <FaChevronUp /> : <FaChevronDown />} */}
+            <FaChevronDown
+              size={12}
+              className=" transition-transform duration-300 transform"
+              style={{
+                transform: isHovered ? "rotate(180deg)" : "rotate(0deg)",
+              }}
+            />
             {/* Dropdown content */}
             {isHovered && (
               <div
@@ -84,7 +85,7 @@ const Navbar = () => {
         <div>
           <button className="p-4 bg-green-600 text-white text-md flex items-center gap-2 outline-none border-none">
             <FaPhoneVolume className="text-white " size={20} />
-            01- 234 567 890
+            92-282 303774
           </button>
         </div>
       </div>

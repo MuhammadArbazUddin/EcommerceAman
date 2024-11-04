@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const DeliverySection = () => {
   return (
-    <div className=" p-4">
+    <div className="pb-8 p-4">
       <div className="delivery relative rounded-xl bg-customGreen p-4 flex items-center gap-4 flex-wrap z-10">
         <img
           src="https://wowtheme7.com/tf/marketpro/assets/images/bg/delivery-bg.png"
@@ -11,7 +11,7 @@ const DeliverySection = () => {
           className="absolute inset-0 w-full h-full object-cover z-[-1]"
         />
         <div className="flex flex-wrap w-full items-center">
-          <div className="hidden md:block md:w-3/12 text-center">
+          <div className="mb-[-80px] hidden md:block md:w-3/12 text-center">
             <div>
               <img
                 src="https://wowtheme7.com/tf/marketpro/assets/images/thumbs/delivery-man.png"

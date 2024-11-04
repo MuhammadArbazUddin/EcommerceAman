@@ -2,7 +2,7 @@ import React from "react";
 import { CountryDropdown, SearchInput } from "../components";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
-import { AmanLogo } from "../../assets";
+import { AmanAnim } from "../../assets/index";
 
 const Header = () => {
   return (
@@ -10,12 +10,14 @@ const Header = () => {
       <div className="p-2 px-3 mx-auto ">
         <nav className="flex justify-between items-center py-4">
           <div className="logo">
-            <a href="/">
-              <img
-                src={AmanLogo}
-                alt="logo"
-                className="h-20 mt-[-35px] absolute "
-              />
+            <a href="/" className="flex items-center">
+              <img src={AmanAnim} alt="logo" className="h-14" />
+              <h1 className="text-2xl font-medium tracking-tighter text-[#8cc63e]">
+                Aman
+                <span className="text-[#459246] font-medium tracking-tighter">
+                  Stop
+                </span>{" "}
+              </h1>
             </a>
           </div>
 
