@@ -7,9 +7,10 @@ import {
   OffersSection,
   ProductGrid,
   ShopByBrands,
-  VendorsCard,
   CreateAccount,
+  DeliverySection,
 } from "../../components/components";
+import TopVendors from "../../components/TopVendors/TopVendors";
 
 const Home = () => {
   return (
@@ -17,9 +18,10 @@ const Home = () => {
       {" "}
       <Hero />
       <CardsSlider />
-      <VendorsCard />
+      <TopVendors heading={"Top Stores"} />
       <OffersSection />
       <ProductGrid />
+      <DeliverySection />
       <ShopByBrands />
       <FeaturesSection />
       {/* <CreateAccount /> */}

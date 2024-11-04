@@ -2,6 +2,7 @@ import React from "react";
 import { CountryDropdown, SearchInput } from "../components";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoCartOutline } from "react-icons/io5";
+import { AmanLogo } from "../../assets";
 
 const Header = () => {
   return (
@@ -11,9 +12,9 @@ const Header = () => {
           <div className="logo">
             <a href="/">
               <img
-                src="https://wowtheme7.com/tf/marketpro/assets/images/logo/logo.png"
-                alt="Logo"
-                className="h-11 "
+                src={AmanLogo}
+                alt="logo"
+                className="h-20 mt-[-35px] absolute "
               />
             </a>
           </div>

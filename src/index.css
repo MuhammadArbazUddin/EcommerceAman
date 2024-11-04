@@ -106,3 +106,11 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
   border: 2px solid #ffffff; /* Optional: white border for contrast */
 }
+
+.vendor-card {
+  background-image: url(https://wowtheme7.com/tf/marketpro/assets/images/shape/box-shape2.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: 1;
+}

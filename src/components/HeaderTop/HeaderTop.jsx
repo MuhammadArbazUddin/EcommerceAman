@@ -47,13 +47,6 @@ const HeaderTop = () => {
         <ul className="flex items-center flex-wrap">
           <li className="border-small relative">
             <a href="#" className="text-white flex items-center text-sm px-3">
-              Help Center
-              <FaChevronDown size={10} className="ml-1" />
-            </a>
-          </li>
-
-          <li className="border-small relative">
-            <a href="#" className="text-white flex items-center text-sm px-3">
               Eng
               <FaChevronDown size={10} className="ml-1" />
             </a>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { BsFillStarFill } from "react-icons/bs";
 import { IoStorefrontSharp } from "react-icons/io5";

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 import { IoCartOutline } from "react-icons/io5";
 import { ScrollDownButton } from "../components";
+import "animate.css";
 
 const slides = [
   {
@@ -14,9 +15,8 @@ const slides = [
     id: 2,
     title: "Fresh Produce Delivered to Your Doorstep",
     image:
-      "https://wowtheme7.com/tf/marketpro/assets/images/thumbs/banner-img1.png", // Change this to a different image if needed
+      "https://wowtheme7.com/tf/marketpro/assets/images/thumbs/banner-img1.png",
   },
-  // Add more slides as needed
 ];
 
 const Hero = () => {
@@ -39,21 +39,19 @@ const Hero = () => {
       />
       <div className="flex items-center justify-between px-5 py-10 relative z-10">
         <div className="w-8/12">
-          {" "}
-          {/* Adjusted width to 60% */}
-          <h1 className="text-6xl leading-tight font-bold text-customBlue font-quick">
+          <h1 className="animate__animated animate__bounceInDown text-6xl leading-tight font-bold text-customBlue font-quick">
             {slides[currentSlide].title}
           </h1>
+
           <div className="mt-5">
-            <button className="flex items-center mt-12 px-6 py-2 bg-[#4B9E60] text-white rounded-full hover:bg-green-700 transition-all duration-300 ease-in-out">
+            <button className="animate__animated animate__bounceInUp flex items-center mt-12 px-6 py-2 bg-[#4B9E60] text-white rounded-full hover:bg-green-700 transition-all duration-300 ease-in-out">
               Explore Shop
               <IoCartOutline size={22} className="ml-2" />
             </button>
           </div>
         </div>
-        <div className=" flex justify-end">
-          {" "}
-          {/* Adjusted width to 40% */}
+
+        <div className=" animate__bounceIn flex justify-end">
           <img src={slides[currentSlide].image} alt="Grocery" width={400} />
         </div>
       </div>
