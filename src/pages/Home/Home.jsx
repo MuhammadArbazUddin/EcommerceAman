@@ -3,7 +3,7 @@ import {
   CardsSlider,
   FeaturesSection,
   Hero,
-  LoginForm,
+  // LoginForm,
   OffersSection,
   ProductGrid,
   ShopByBrands,
@@ -25,7 +25,7 @@ const Home = () => {
       <ShopByBrands />
       <FeaturesSection />
       <Accordion />
-      <LoginForm />
+      {/* <LoginForm/> */}
     </>
   );
 };

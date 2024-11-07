@@ -33,12 +33,11 @@ const HeaderTop = () => {
       <div className="flex justify-between flex-wrap gap-8 w-full">
         <ul className="flex flex-wrap gap-4">
           <li className="border-small pr-4">
-            <a
-              href="#shipping"
-              className="text-white text-sm hover:underline underline-offset-1"
-            >
-              Become A Seller
-            </a>
+            <Link to="/seller-register">
+              <a className="text-white text-sm hover:underline underline-offset-1">
+                Become A Seller
+              </a>
+            </Link>
           </li>
           <li className="border-small pr-4">
             <a

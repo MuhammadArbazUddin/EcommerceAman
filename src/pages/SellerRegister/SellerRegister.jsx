@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { FiEye, FiEyeOff } from "react-icons/fi"; // Importing the icons
 
-const RegisterForm = () => {
+const SellerRegister = () => {
   const [showPassword, setShowPassword] = useState(false);
 
   const togglePasswordVisibility = () => {
@@ -12,7 +12,7 @@ const RegisterForm = () => {
     <div className="flex items-center justify-center min-h-screen py-20">
       <div className="max-w-lg w-full bg-white rounded-3xl shadow-xl p-10 border hover:border-customGreen">
         <h2 className="text-4xl font-bold text-center mb-8 text-gray-800">
-          Register
+          Seller Register
         </h2>
         <form>
           <div className="mb-6">
@@ -89,4 +89,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default SellerRegister;

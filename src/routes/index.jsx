@@ -8,6 +8,7 @@ import {
   Vendors,
   VendorsDetailPage,
   ForgotPassword,
+  SellerRegister,
 } from "../pages/page";
 
 import {
@@ -46,6 +47,7 @@ const Routing = () => {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgot-password" element={<ForgotPassword />} />
+        <Route path="/seller-register" element={<SellerRegister />} />
       </Routes>
       <Footer />
     </Router>

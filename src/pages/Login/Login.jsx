@@ -49,9 +49,9 @@ const LoginForm = () => {
               className="absolute inset-y-0 right-4 top-8 flex items-center"
             >
               {showPassword ? (
-                <FiEyeOff className="text-gray-600" size={24} />
-              ) : (
                 <FiEye className="text-gray-600" size={24} />
+              ) : (
+                <FiEyeOff className="text-gray-600" size={24} />
               )}
             </button>
           </div>
