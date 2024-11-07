@@ -7,8 +7,8 @@ import {
   OffersSection,
   ProductGrid,
   ShopByBrands,
-  CreateAccount,
   DeliverySection,
+  Accordion,
 } from "../../components/components";
 import TopVendors from "../../components/TopVendors/TopVendors";
 
@@ -20,11 +20,11 @@ const Home = () => {
       <CardsSlider />
       <TopVendors heading={"Top Stores"} />
       <OffersSection />
-      <ProductGrid />
+      {/* <ProductGrid /> */}
       <DeliverySection />
       <ShopByBrands />
       <FeaturesSection />
-      {/* <CreateAccount /> */}
+      <Accordion />
       <LoginForm />
     </>
   );

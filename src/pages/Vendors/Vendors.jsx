@@ -7,6 +7,7 @@ import {
   Pagination,
 } from "../../components/components";
 import { setPage } from "../../store/slices/paginationSlice";
+import { Link } from "react-router-dom";
 
 const Vendors = () => {
   const dispatch = useDispatch();
